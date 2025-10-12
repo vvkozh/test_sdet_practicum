@@ -1,6 +1,8 @@
 from pages.form_fields_page import FormFieldsPage
+import allure
 
 class TestFormFilling:
+    @allure.title('Тест заполнения формы')
     def test_form_filling(self, driver):
         # arrange
         form_filling = FormFieldsPage(driver)
